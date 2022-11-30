@@ -22,6 +22,14 @@ Al ejecutar el proyecto en local debe estar tambien ejecutando memcached. Para i
 
 Esta configurado para funcionar con MYSQL, puede descargarlo: https://dev.mysql.com/downloads/windows/installer/8.0.html 
 
+### Requirements
+- Django==2.1.5
+- djangorestframework==3.11.0
+- PyMySQL==1.0.2
+- python3-memcached==1.51
+- pytz==2022.6
+- sqlparse==0.4.3
+- Se uilizó Python 3.7.9
 ## :rocket: Ejecutar aplicación:
 - Ejecutar memcached: Dirigirse a la carpeta descargada desde terminal y ejecutar: `memcached.exe -m 512 -vvv`
 - Desde otra terminal acceder al proyecto descargado, a la altura del manage.py ejecutar `python manage.py runserver`
