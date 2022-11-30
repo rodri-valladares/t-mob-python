@@ -1,6 +1,8 @@
+from django.urls import reverse
 from django.db import models
 from datetime import datetime 
 from django.db.models.signals import post_save
+
 # Create your models here.
 class Redirect(models.Model):
     key = models.CharField('Key', max_length=50, unique=True)

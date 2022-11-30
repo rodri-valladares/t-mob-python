@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo</title>
+</head>
+<body>
+    <h1>Ingrese key:</h1>
+    <form method="GET">{% csrf_token %}
+        <input type="text" id="kword" name="kword" placeholder="key..">
+        <button type="submit"></button>
+    </form>
+
+    {% if redirect_date %}
+    <h3>JSON date</h3>
+    {{redirect_date}}
+    
+    {% endif %}
+</body>
+</html>
